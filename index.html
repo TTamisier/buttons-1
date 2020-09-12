@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="list">
+        <div id="blueCard" class="card">
+            <div class="cardbg"></div>
+            <h3>Reprendre</h3>
+        </div>
+        <div id="yellowCard"class="card">
+            <h3>Paramètres</h3>
+         </div>
+         <div id="redCard" class="card">
+            <h3>Quitter</h3>
+         </div>
+    </div>
+    <script>
+        document.getElementById ("blueCard").addEventListener ("click", bgBlue, false);
+        document.getElementById ("yellowCard").addEventListener ("click", bgYellow, false);
+        document.getElementById ("redCard").addEventListener ("click", bgRed, false);
+
+
+        function bgBlue() {
+            document.getElementsByTagName('body')[0].style.background = "blue";
+        }
+        function bgYellow() {
+            document.getElementsByTagName('body')[0].style.background = "yellow";
+        }
+        function bgRed() {
+            document.getElementsByTagName('body')[0].style.background = "red";
+        }
+    </script>
+</body>
+</html>
